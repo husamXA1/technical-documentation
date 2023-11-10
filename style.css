@@ -26,10 +26,21 @@ header:not(#navbar header){border-bottom: 2px solid #121212;width: fit-content;p
 p{font-size: 16px;padding: 6px 0px 2px 0px;}
 ul, ol{padding: 10px 30px;background-color: #e2e2e2;width: fit-content;}
 pre{
-    padding: 6px 10px;width: fit-content;
+    padding: 26px 10px;width: fit-content;
     background-color: #121212;color: #e2e2e2;
+    position: relative;
 }
-
+.fa-copy {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+}
+.fa-copy:hover {
+    opacity: 0.75;
+}
 @media screen and (max-width: 800px) {
     #navbar {
         position: relative;top: 0px;left: 0px;
